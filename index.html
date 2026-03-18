@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — BiasPath</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #141414;
+      --border: #2a2a2a;
+      --text: #e8e8e8;
+      --muted: #888;
+      --accent: #5B8EFF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Pretendard', 'Noto Sans KR', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 48px 24px 96px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+
+    /* header */
+    .header { margin-bottom: 48px; }
+    .app-name {
+      font-size: 28px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #5B8EFF, #BF5FFF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+    .header p { color: var(--muted); font-size: 14px; }
+
+    /* lang toggle */
+    .lang-toggle {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .lang-toggle button {
+      padding: 6px 20px;
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .lang-toggle button.active {
+      background: #fff;
+      color: #000;
+    }
+
+    /* content sections */
+    .content { display: none; }
+    .content.active { display: block; }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin: 40px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2:first-of-type { margin-top: 0; }
+    p { color: var(--text); margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    ul li { color: var(--text); margin-bottom: 6px; }
+
+    .table-wrap { overflow-x: auto; margin-bottom: 16px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th {
+      background: var(--surface);
+      color: var(--muted);
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+    }
+    td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    .highlight {
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 16px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="app-name">BiasPath: Trace Your Idol</div>
+      <p>Privacy Policy</p>
+    </div>
+
+    <div class="lang-toggle">
+      <button class="active" onclick="setLang('en')">EN</button>
+      <button onclick="setLang('ko')">KO</button>
+    </div>
+
+    <!-- ── ENGLISH ── -->
+    <div class="content active" id="content-en">
+      <p><strong>Effective Date:</strong> March 18, 2026</p>
+
+      <h2>1. Overview</h2>
+      <p>BiasPath ("we", "our", or "the app") is a map application that helps K-POP fans discover and explore locations visited by their favorite artists in Seoul, South Korea. We are committed to protecting your privacy and handling your data transparently.</p>
+
+      <h2>2. Information We Collect</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Data</th>
+            <th>Purpose</th>
+            <th>Storage</th>
+          </tr>
+          <tr>
+            <td>Apple ID (name, email)</td>
+            <td>Account creation via Sign in with Apple</td>
+            <td>On-device only</td>
+          </tr>
+          <tr>
+            <td>Location data</td>
+            <td>Showing nearby K-POP spots on the map</td>
+            <td>Not stored; used in real-time only</td>
+          </tr>
+          <tr>
+            <td>Photos you select</td>
+            <td>Creating photo strip memories in the feed</td>
+            <td>On-device only</td>
+          </tr>
+          <tr>
+            <td>Saved places / favorites</td>
+            <td>Displaying your saved list in My Page</td>
+            <td>On-device only</td>
+          </tr>
+          <tr>
+            <td>Place suggestions (email)</td>
+            <td>Sending place proposals via Mail app</td>
+            <td>Not stored by the app</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="highlight">
+        All data is stored locally on your device. We do not operate servers or databases that collect personal information.
+      </div>
+
+      <h2>3. Sign in with Apple</h2>
+      <p>BiasPath uses Sign in with Apple for authentication. Apple may provide us with your name and email address. You may choose to hide your email using Apple's private relay feature. We use this information solely for identifying your account within the app on your device.</p>
+      <p>For more information, see <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+
+      <h2>4. Location Data</h2>
+      <p>We request access to your device location only to display your position on the map and show nearby spots. Location data is used in real-time and is never transmitted to or stored on any external server.</p>
+
+      <h2>5. Photos</h2>
+      <p>We request access to your photo library only when you choose to create a photo strip. Selected photos are processed entirely on your device and are never uploaded or shared.</p>
+
+      <h2>6. Third-Party Services</h2>
+      <p>BiasPath uses Apple MapKit to render maps. Map usage is subject to <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>. We do not use any third-party analytics, advertising, or tracking SDKs.</p>
+
+      <h2>7. Data Retention & Deletion</h2>
+      <p>Since all data is stored locally on your device, you can delete all app data at any time by uninstalling the app. We have no ability to access or delete data on your behalf.</p>
+
+      <h2>8. Children's Privacy</h2>
+      <p>BiasPath is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+      <h2>9. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date.</p>
+
+      <h2>10. Contact</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+      <p><a href="mailto:support@biasPath.app">support@biasPath.app</a></p>
+
+      <div class="footer">
+        © 2026 BiasPath. All rights reserved.
+      </div>
+    </div>
+
+    <!-- ── KOREAN ── -->
+    <div class="content" id="content-ko">
+      <p><strong>시행일:</strong> 2026년 3월 18일</p>
+
+      <h2>1. 개요</h2>
+      <p>BiasPath(이하 "앱")는 K-POP 팬들이 서울에서 좋아하는 아티스트가 다녀간 장소를 탐색할 수 있도록 돕는 지도 앱입니다. 당사는 이용자의 개인정보를 소중히 여기며 투명하게 처리합니다.</p>
+
+      <h2>2. 수집하는 정보</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>데이터</th>
+            <th>목적</th>
+            <th>저장 위치</th>
+          </tr>
+          <tr>
+            <td>Apple ID (이름, 이메일)</td>
+            <td>Sign in with Apple을 통한 계정 생성</td>
+            <td>기기 내 저장</td>
+          </tr>
+          <tr>
+            <td>위치 정보</td>
+            <td>지도에서 주변 성지 표시</td>
+            <td>저장 안 함 (실시간만 사용)</td>
+          </tr>
+          <tr>
+            <td>선택한 사진</td>
+            <td>네컷 필름 피드 생성</td>
+            <td>기기 내 저장</td>
+          </tr>
+          <tr>
+            <td>저장된 장소 / 즐겨찾기</td>
+            <td>마이페이지 찜 목록 표시</td>
+            <td>기기 내 저장</td>
+          </tr>
+          <tr>
+            <td>장소 제안 (이메일)</td>
+            <td>메일 앱을 통한 장소 제안 전송</td>
+            <td>앱이 저장하지 않음</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="highlight">
+        모든 데이터는 이용자의 기기에 로컬로 저장됩니다. 개인정보를 수집하는 별도의 서버나 데이터베이스를 운영하지 않습니다.
+      </div>
+
+      <h2>3. Apple 로그인 (Sign in with Apple)</h2>
+      <p>BiasPath는 Apple 로그인을 통해 인증을 처리합니다. Apple은 이름 및 이메일 주소를 제공할 수 있으며, 이용자는 Apple의 이메일 가리기 기능을 선택할 수 있습니다. 수집된 정보는 기기 내 계정 식별 목적으로만 사용됩니다.</p>
+      <p>자세한 내용은 <a href="https://www.apple.com/kr/legal/privacy/" target="_blank">Apple 개인정보 처리방침</a>을 참고하세요.</p>
+
+      <h2>4. 위치 정보</h2>
+      <p>위치 정보는 지도에서 현재 위치 표시 및 주변 장소 안내 목적으로만 요청됩니다. 위치 데이터는 실시간으로만 사용되며 외부 서버로 전송되거나 저장되지 않습니다.</p>
+
+      <h2>5. 사진</h2>
+      <p>네컷 필름 생성 시에만 사진 라이브러리 접근을 요청합니다. 선택된 사진은 기기 내에서만 처리되며 외부로 업로드되거나 공유되지 않습니다.</p>
+
+      <h2>6. 제3자 서비스</h2>
+      <p>BiasPath는 지도 표시를 위해 Apple MapKit을 사용합니다. 지도 사용은 <a href="https://www.apple.com/kr/legal/privacy/" target="_blank">Apple 개인정보 처리방침</a>의 적용을 받습니다. 제3자 분석, 광고, 추적 SDK는 사용하지 않습니다.</p>
+
+      <h2>7. 데이터 보관 및 삭제</h2>
+      <p>모든 데이터는 이용자의 기기에만 저장되므로, 앱을 삭제하면 모든 데이터가 삭제됩니다. 당사는 이용자의 데이터에 접근하거나 삭제할 수 없습니다.</p>
+
+      <h2>8. 아동 개인정보</h2>
+      <p>BiasPath는 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+      <h2>9. 방침 변경</h2>
+      <p>본 개인정보 처리방침은 필요에 따라 변경될 수 있습니다. 변경 사항은 이 페이지에 시행일과 함께 반영됩니다.</p>
+
+      <h2>10. 문의</h2>
+      <p>개인정보 처리방침에 관한 문의는 아래로 연락해 주세요:</p>
+      <p><a href="mailto:support@biasPath.app">support@biasPath.app</a></p>
+
+      <div class="footer">
+        © 2026 BiasPath. All rights reserved.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-toggle button').forEach(el => el.classList.remove('active'));
+      document.getElementById('content-' + lang).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
